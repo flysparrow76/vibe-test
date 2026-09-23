@@ -1,0 +1,65 @@
+:root { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; color: #233c35; background: #f3f6f4; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button { border: 1px solid transparent; border-radius: 8px; padding: 11px 22px; background: #146b55; color: white; font-weight: 700; cursor: pointer; white-space: nowrap; }
+button:hover { background: #0e5543; }
+button:disabled { opacity: .5; cursor: wait; }
+input { width: 100%; padding: 12px 14px; border: 1px solid #d7e1da; border-radius: 8px; background: #fcfdfc; color: #233c35; }
+input::placeholder { color: #89968f; }
+input:disabled { opacity: .65; }
+:focus-visible { outline: 3px solid #59b699; outline-offset: 3px; }
+.app { max-width: 1180px; margin: 0 auto; padding: 48px 28px 64px; }
+.page-header { display: flex; align-items: center; gap: 16px; margin-bottom: 34px; }
+.brand-mark { display: grid; place-items: center; width: 52px; height: 58px; border-radius: 16px 16px 8px 8px; background: #146b55; color: #fff; font-size: 30px; font-weight: 800; border-bottom: 5px solid #99ceba; }
+.eyebrow { margin: 0 0 8px; color: #698379; font-size: 10px; font-weight: 800; letter-spacing: 1.8px; }
+h1 { margin: 0; font-size: 28px; letter-spacing: -1px; }
+h2 { margin: 0; font-size: 19px; letter-spacing: -.5px; }
+.header-tag { margin-left: auto; border: 1px solid #d5e3dc; border-radius: 20px; padding: 8px 14px; font-size: 12px; color: #547166; }
+.panel { border: 1px solid #dfe7e1; border-radius: 16px; background: white; padding: 28px; box-shadow: 0 4px 18px #233c3504; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 26px; }
+.hint { color: #7b8981; font-size: 12px; }
+fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
+.fields { display: grid; grid-template-columns: 1fr .8fr 1.5fr; gap: 20px; }
+.fields label { display: grid; gap: 10px; font-size: 13px; font-weight: 700; }
+.form-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 22px; }
+.secondary { background: white; color: #52695e; border-color: #d7e1da; }
+.secondary:hover { background: #edf4f0; }
+.messages { margin: 20px 0; font-size: 13px; }
+.messages p { border-radius: 8px; padding: 14px 18px; line-height: 1.6; }
+.error { color: #9d3838; background: #fff0ef; }
+.notice { color: #146b55; background: #e5f3ec; }
+.count { display: inline-block; margin-left: 6px; padding: 3px 9px; font-size: 12px; background: #eaf3ee; color: #146b55; border-radius: 20px; vertical-align: middle; }
+.search-form { display: flex; gap: 8px; margin-bottom: 24px; }
+.search-field { flex: 1; max-width: 480px; }
+.search-field input { height: 100%; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+th { padding: 14px 12px; border-block: 1px solid #e4eae5; background: #f7f9f7; font-size: 12px; color: #698075; white-space: nowrap; }
+td { padding: 19px 12px; border-bottom: 1px solid #edf0ec; line-height: 1.6; overflow-wrap: anywhere; max-width: 280px; }
+.station-no { color: #7b8c82; }
+.station-name { font-weight: 700; min-width: 95px; }
+.line-badge { display: inline-block; background: #edf5ef; color: #33765b; border-radius: 5px; padding: 3px 9px; min-width: 55px; }
+.date { color: #7b8981; font-size: 12px; min-width: 130px; }
+.row-actions { display: flex; gap: 6px; }
+.row-actions button { background: white; padding: 6px 10px; font-size: 12px; }
+.edit-button { color: #397961; border-color: #d5e5db; }
+.delete-button { color: #ae5c56; border-color: #efdedb; }
+.row-actions button:hover { background: #f2f5f2; }
+.editing { background: #f1f9f4; }
+.empty { text-align: center; padding: 64px 16px; color: #7b8981; }
+.loading { color: #146b55; font-size: 13px; }
+.list-footer { margin-top: 20px; color: #8b988f; font-size: 11px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 720px) {
+  .app { padding: 28px 16px; }
+  .panel { padding: 22px 16px; }
+  .fields { grid-template-columns: 1fr; gap: 16px; }
+  .header-tag { display: none; }
+  h1 { font-size: 24px; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .search-form { flex-wrap: wrap; }
+  .search-field { flex-basis: 100%; max-width: none; }
+  .search-form button { flex: 1; }
+  table { min-width: 740px; }
+}
